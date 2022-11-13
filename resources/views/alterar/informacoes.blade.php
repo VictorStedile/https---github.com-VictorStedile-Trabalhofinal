@@ -29,7 +29,7 @@ $(document).ready(function(){
             </div>
             <div class="col-6">
                 <div class="form-group">
-                    Cpf: <input type="text" name="cpf" id="cpf" class="form-control" value="{{$informacoes->login}}">
+                    Cpf: <input type="text" name="cpf" id="cpf" class="form-control" readonly="readonly" value="{{$informacoes->login}}">
                 </div>
             </div>
         <div>

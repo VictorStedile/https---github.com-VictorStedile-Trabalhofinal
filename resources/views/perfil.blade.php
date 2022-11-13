@@ -91,6 +91,4 @@ $(document).ready(function(){
         </div>
     </div>
 
-    <a href="{{route('deletar_perfil', $informacoes->id)}}" id="delete" class="btn btn-danger mb-3 col-2"></a>
-
 @endsection

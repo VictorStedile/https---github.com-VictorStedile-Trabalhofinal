@@ -6,7 +6,9 @@
         <div class="card-body text-white bg-dark">
           <h6 class="card-title">{{$prod->nome}} - R${{$prod->valor}}</h6>
           <p class="card-text">{{$prod->descricao}}</p>
+          @if(\Auth::user())
           <a href="{{route('adicionar_carrinho', ['idproduto' => $prod->id])}}" class="btn btn-sm btn-secondary bg-dark">Comprar</a>
+          @endif
         </div>
       </div>
     </div>
